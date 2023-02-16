@@ -91,6 +91,7 @@ class ChannelFragment : Fragment() {
                 )
             }
             val token = client.devToken(user.id)
+            Log.d("ChannelFragment", token)
             client.connectUser(
                 user = user,
                 token = token
